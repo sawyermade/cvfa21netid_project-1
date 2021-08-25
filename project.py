@@ -142,6 +142,11 @@ def get_image_paths(data_dir):
 	img_path_list = [os.path.join(data_dir, f) for f in img_list]
 	img_path_list = [f for f in img_path_list if os.path.isfile(f)]
 
+	# Check to make sure it found image paths, exit if not
+	if not img_path_list:
+		print(f'No images found in {data_dir}. Exiting program...\n')
+		sys.exit(1)
+
 	return img_path_list
 ##### HELPERS END #####
 
