@@ -5,17 +5,20 @@
 ### Anaconda Setup
 ```
 # Install Anaconda Environment
-
+conda env create -f environment.yml
+conda activate cvpj1
 ```
+
+OR
 
 ### Pip Setup
 ```
 # Install Modules Pip
-
+pip3 install -r requirements.txt
 ```
 
-## Student Info Here
-````
-# Place how to run code here and any packages needing install or any other important information.
-
+### Run program
+```
+# Runs program, will write output images to output directory
+python3 project.py
 ```
