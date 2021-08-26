@@ -16,7 +16,7 @@ Check flip horizontal & vertical functions for examples.
 '''
 
 # Translation Function
-def translation_trans(img):
+def translation_trans(img, params):
 	img_new = img.copy()
 
 	### Your Code Goes Here Start ###
@@ -27,7 +27,7 @@ def translation_trans(img):
 	return img_new
 
 # Rotate Function
-def rotate_trans(img):
+def rotate_trans(img, params):
 	img_new = img.copy()
 
 	### Your Code Goes Here Start ###
@@ -38,7 +38,7 @@ def rotate_trans(img):
 	return img_new
 
 # Similarity Function
-def similarity_trans(img):
+def similarity_trans(img, params):
 	img_new = img.copy()
 
 	### Your Code Goes Here Start ###
@@ -49,7 +49,7 @@ def similarity_trans(img):
 	return img_new
 
 # Affine Function
-def affine_trans(img):
+def affine_trans(img, params):
 	img_new = img.copy()
 
 	### Your Code Goes Here Start ###
@@ -60,7 +60,7 @@ def affine_trans(img):
 	return img_new
 
 # Projective Function
-def projective_trans(img):
+def projective_trans(img, params):
 	img_new = img.copy()
 
 	### Your Code Goes Here Start ###
@@ -71,7 +71,7 @@ def projective_trans(img):
 	return img_new
 
 # Subtract Function
-def subtract_trans(img):
+def subtract_trans(img, params):
 	img_new = img.copy()
 
 	### Your Code Goes Here Start ###
@@ -135,7 +135,7 @@ def get_image_paths(data_dir):
 
 	# Check to make sure it found images, exit if not
 	if not img_list:
-		print(f'No images found in {data_dir}. Exiting program...\n')
+		print(f'No images found in {data_dir}. Exiting program...\n') 
 		sys.exit(1)
 
 	# Add directory to path of image files
@@ -201,38 +201,50 @@ def main():
 		'''
 
 		# Translation Function
+		## Enter needed parameters here in list
+		params = [None]
 		trans = 'translation'
-		img_new = translation_trans(img)
+		img_new = translation_trans(img, params)
 		out_path = get_output_path(output_dir, img_path, trans)
 		imageio.imwrite(out_path, img_new)
 
 		# Rotate Function
+		## Enter needed parameters here in list
+		params = [None]
 		trans = 'rotate'
-		img_new = rotate_trans(img)
+		img_new = rotate_trans(img, params)
 		out_path = get_output_path(output_dir, img_path, trans)
 		imageio.imwrite(out_path, img_new)
 
 		# Similarity Function
+		## Enter needed parameters here in list
+		params = [None]
 		trans = 'similarity'
-		img_new = similarity_trans(img)
+		img_new = similarity_trans(img, params)
 		out_path = get_output_path(output_dir, img_path, trans)
 		imageio.imwrite(out_path, img_new)
 
 		# Affine Function
+		## Enter needed parameters here in list
+		params = [None]
 		trans = 'affine'
-		img_new = affine_trans(img)
+		img_new = affine_trans(img, params)
 		out_path = get_output_path(output_dir, img_path, trans)
 		imageio.imwrite(out_path, img_new)
 
 		# Projective Function
+		## Enter needed parameters here in list
+		params = [None]
 		trans = 'projective'
-		img_new = projective_trans(img)
+		img_new = projective_trans(img, params)
 		out_path = get_output_path(output_dir, img_path, trans)
 		imageio.imwrite(out_path, img_new)
 
 		# Subtract Function
+		## Enter needed parameters here in list
+		params = [None]
 		trans = 'subtract'
-		img_new = subtract_trans(img)
+		img_new = subtract_trans(img, params)
 		out_path = get_output_path(output_dir, img_path, trans)
 		imageio.imwrite(out_path, img_new)
 		##### STUDENT SECTION END #####
