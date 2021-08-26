@@ -17,6 +17,7 @@ Check flip horizontal & vertical functions for examples.
 # Translation Function
 def translation_trans(img, params):
 	img_new = img.copy()
+	img_blank = np.zeros(img.shape)
 
 	### Your Code Goes Here Start ###
 
