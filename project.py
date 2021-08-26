@@ -7,8 +7,7 @@ from tqdm import tqdm
 '''
 This section below is where your transformation functions will go.
 
-You have to figure out the parameters and add them
-to the function definitions. Then write the functions and only
+You have to figure out the parameters. Then write the functions and only
 return the numpy array of the transformed image. The bare
 minimum parameter will always be the image and is included already.
 
