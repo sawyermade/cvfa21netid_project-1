@@ -156,7 +156,7 @@ def main():
 		## Enter needed parameters here in list
 		params = [None]
 		trans = 'flip_horizontal'
-		img_new = flip_horizontal_trans(img)
+		img_new = flip_horizontal_trans(img, params)
 		out_path = get_output_path(output_dir, img_path, trans)
 		imageio.imwrite(out_path, img_new)
 
@@ -164,7 +164,7 @@ def main():
 		## Enter needed parameters here in list
 		params = [None]
 		trans = 'flip_vertical'
-		img_new = flip_vertical_trans(img)
+		img_new = flip_vertical_trans(img, params)
 		out_path = get_output_path(output_dir, img_path, trans)
 		imageio.imwrite(out_path, img_new)
 
