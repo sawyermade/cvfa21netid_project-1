@@ -10,106 +10,72 @@ This section below is where your transformation functions will go.
 You have to figure out the parameters. Then write the functions and only
 return the numpy array of the transformed image. The bare
 minimum parameter will always be the image and is included already.
-
-Check flip horizontal & vertical functions for examples.
 '''
+
+# Flip image vertically
+def flip_vertical_trans(img, params):
+	### Your Code Goes Here Start ###
+	img_new = img.copy()
+	
+	return img_new
+	### Your Code Goes Here End ###
+
+# Flip image horizontally
+def flip_horizontal_trans(img, params):
+	### Your Code Goes Here Start ###
+	img_new = img.copy()
+	
+	return img_new
+	### Your Code Goes Here End ###
 
 # Translation Function
 def translation_trans(img, params):
-	img_new = img.copy()
-
 	### Your Code Goes Here Start ###
-
-
-	### Your Code Goes Here End ###
-
+	img_new = img.copy()
+	
 	return img_new
+	### Your Code Goes Here End ###
 
 # Rotate Function
 def rotate_trans(img, params):
-	img_new = img.copy()
-
 	### Your Code Goes Here Start ###
-
-
-	### Your Code Goes Here End ###
-
+	img_new = img.copy()
+	
 	return img_new
+	### Your Code Goes Here End ###
 
 # Similarity Function
 def similarity_trans(img, params):
-	img_new = img.copy()
-
 	### Your Code Goes Here Start ###
-
-
-	### Your Code Goes Here End ###
-
+	img_new = img.copy()
+	
 	return img_new
+	### Your Code Goes Here End ###
 
 # Affine Function
 def affine_trans(img, params):
-	img_new = img.copy()
-
 	### Your Code Goes Here Start ###
-
-
-	### Your Code Goes Here End ###
-
+	img_new = img.copy()
+	
 	return img_new
+	### Your Code Goes Here End ###
 
 # Projective Function
 def projective_trans(img, params):
-	img_new = img.copy()
-
 	### Your Code Goes Here Start ###
-
-
-	### Your Code Goes Here End ###
-
+	img_new = img.copy()
+	
 	return img_new
+	### Your Code Goes Here End ###
 
 # Subtract Function
 def subtract_trans(img, params):
-	img_new = img.copy()
-
 	### Your Code Goes Here Start ###
-
-
+	img_new = img.copy()
+	
+	return img_new
 	### Your Code Goes Here End ###
-
-	return img_new
 ##### STUDENT SECTION END #####
-
-
-
-##### EXAMPLES START #####
-# Flip image vertically
-def flip_vertical_trans(img):
-	# Copy numpy array, not needed here but just showing how to do it for future.
-	img_new = img.copy()
-
-	# Flip vertically using numpy slices
-	img_new = img_new[::-1]
-
-	# This will work as well without the copy in this case, but not in all future cases.
-	# img_new = img[::-1]
-
-	return img_new
-
-# Flip image horizontally
-def flip_horizontal_trans(img):
-	# Copy numpy array, not needed here but just showing how to do it for future.
-	img_new = img.copy()
-
-	# Flip horizontally using numpy slices
-	img_new = img_new[:, ::-1]
-
-	# This will work as well without the copy in this case, but not in all future cases.
-	# img_new = img[:, ::-1]
-
-	return img_new
-##### EXAMPLES END #####
 
 
 
@@ -178,19 +144,6 @@ def main():
 		# Open image with imageio as numpy array
 		img = imageio.imread(img_path)
 
-		# Flip horizontal, no parameters
-		trans = 'flip_horizontal'
-		img_new = flip_horizontal_trans(img)
-		out_path = get_output_path(output_dir, img_path, trans)
-		imageio.imwrite(out_path, img_new)
-
-		# Flip vertical, no parameters
-		trans = 'flip_vertical'
-		img_new = flip_vertical_trans(img)
-		out_path = get_output_path(output_dir, img_path, trans)
-		imageio.imwrite(out_path, img_new)
-
-
 
 		##### STUDENT SECTION START #####
 		'''
@@ -198,6 +151,22 @@ def main():
 		them to the functions under each section below.
 		Do not change output filename and saving part, just function parameters.
 		'''
+
+		# Flip horizontal, no parameters
+		## Enter needed parameters here in list
+		params = [None]
+		trans = 'flip_horizontal'
+		img_new = flip_horizontal_trans(img)
+		out_path = get_output_path(output_dir, img_path, trans)
+		imageio.imwrite(out_path, img_new)
+
+		# Flip vertical, no parameters
+		## Enter needed parameters here in list
+		params = [None]
+		trans = 'flip_vertical'
+		img_new = flip_vertical_trans(img)
+		out_path = get_output_path(output_dir, img_path, trans)
+		imageio.imwrite(out_path, img_new)
 
 		# Translation Function
 		## Enter needed parameters here in list
