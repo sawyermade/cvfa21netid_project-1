@@ -41,7 +41,7 @@ Open project.py in a text editor and then copy/paste into a new Colab Notebook.
 
 DO NOT ADD ANY NEW CODE CELLS OR TEXT CELLS!!!
 
-Once Complete go to File, then Download, choose .py, save as project.py, and overwrite the original project.py in the original directory.
+Once coding is complete go to the File tab in Colab, then Download, choose ".py", save as project.py, and overwrite the original project.py in the original directory you downloaded earlier.
 
 ## How To Submit
 For submission replace the cvfa21netid part of the directory with you netid. In my case, my netid is danielsawyer so the directory name would be danielsawyer_project-1.
