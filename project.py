@@ -142,7 +142,7 @@ class transformations:
     ### HELPERS START ###
     '''
     Create any additional helper functions here 
-    that you use in your functions.
+    that you use in your functions below.
     '''
     # Inverse Warp A
     def inverse_warp_a(self, h, h_inv):
