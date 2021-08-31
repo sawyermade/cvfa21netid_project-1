@@ -408,7 +408,7 @@ def main():
         negative shifts left and up.
         '''
         ## Parameters you can change
-        shift_x, shift_y = 0.0, 0.0
+        shift_x, shift_y = 0.50, 0.50
 
         ## Dont change
         trans = 'translation'
@@ -423,7 +423,7 @@ def main():
         negative is counterclockwise.
         '''
         ## Paremeters you can change
-        theta_degree = 0
+        theta_degree = -45
         theta_radian = degree_to_radian(theta_degree)
 
         ## Dont change
@@ -439,7 +439,7 @@ def main():
         while under 100% contracts the image. 
         '''
         ## Parameters you can change
-        scale_percent = 1.00
+        scale_percent = 0.50
 
         ## Dont change
         trans = 'scale'
