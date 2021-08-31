@@ -552,7 +552,7 @@ def main():
 
     ### STUDENT SECTION START ###
 
-    # Compute mean and SD image function
+    # Compute Mean and SD Image function
     ## Parameters you can change
     resize_w, resize_h = 300, 200 
 
@@ -564,7 +564,7 @@ def main():
     imageio.imwrite(out_path2, img_sd)
 
 
-    # Batch Normalization
+    # Batch Normalization function
     print('\nBatch Normalization...')
     ## Parameters you can change
     resize_w, resize_h = 300, 200
