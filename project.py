@@ -254,8 +254,8 @@ class transformations:
 
     # Rotate
     '''
-    Rotate image by degree theta. Positive is clockwise,
-    negative is counterclockwise.
+    Rotate image by degree theta. Positive is counterclockwise,
+    negative is clockwise.
     '''
     def rotate(self, theta):
         # You can delete this, this just makes all black image.
@@ -454,8 +454,8 @@ def main():
 
         # Rotate function
         '''
-        Rotate image by degree theta. Positive is clockwise,
-        negative is counterclockwise.
+        Rotate image by degree theta. Positive is counterclockwise,
+        negative is clockwise.
         '''
         ## Paremeters you can change
         theta_degree = -45

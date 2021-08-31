@@ -55,6 +55,10 @@ DO NOT INCLUDE OUTPUT DIRECTORY!!!
 
 So either delete or move the output directory.
 
+ALSO include your 2 PAGE REPORT as report.pdf in the main directory.
+
+After creating the zip file, upload it to Canvas by the submission due date.
+
 Here is an example tree of the directory structure you should be turning in with the netid being danielsawyer.
 
 danielsawyer_project-1.zip contains...
@@ -81,8 +85,7 @@ danielsawyer_project-1
 ├── environment.yml
 ├── project.py
 ├── README.md
+├── report.pdf
 ├── requirements.txt
 └── transformations.txt
 ```
-
-After creating the zip file, upload it to Canvas by the submission due date.
