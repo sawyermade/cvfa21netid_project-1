@@ -203,9 +203,9 @@ class transformations:
             gy = abs(y - (self.height - 1))
             return (gx, gy)
         def h_inv(x, y):
-            gx = x
-            gy = abs(y - (self.height - 1))
-            return (gx, gy)
+            fx = x
+            fy = abs(y - (self.height - 1))
+            return (fx, fy)
 
         # Warp image
         img_new = self.inverse_warp_a(h, h_inv)
@@ -232,7 +232,10 @@ class transformations:
 
     ### STUDENT SECTION START ###
     '''
-    The only thing your functions should return is the new image as uint8
+    Finish functions without creating any new functions here.
+    If you need to create new functions, place them in the helpers
+    section of the transformations class.
+    The only thing your functions should return is the new image as uint8.
     '''
 
     # Translation
@@ -569,7 +572,7 @@ def main():
     ## Dont change
     batch = img_trans.batch_norm(resize_w, resize_h)
     trans = 'batch_norm'
-    print('\nSaving new batch...')
+    print('\nSaving batch normalized images...')
     for i in tqdm(range(len(batch))):
         img_new = batch[i]
         img_path = img_path_batch_list[i]
