@@ -41,7 +41,7 @@ Open project.py in a text editor and then copy/paste into a new Colab Notebook.
 
 DO NOT ADD ANY NEW CODE CELLS OR TEXT CELLS!!!
 
-Once coding is complete go to the File tab in Colab, then Download, choose ".py", save as project.py, and overwrite the original project.py in the original directory you downloaded earlier. Then submit according to the section below.
+Once coding is complete go to the File tab in Colab, then Download, choose ".py", save as project.py, and overwrite the original project.py in the original directory you cloned/downloaded earlier. Then submit according to the section below.
 
 ## How To Submit
 For submission replace the cvfa21netid part of the directory with you netid. In my case, my netid is danielsawyer so the directory name would be danielsawyer_project-1
@@ -54,10 +54,9 @@ So either delete or move the output directory.
 
 Here is an example tree of the directory structure you should be turning in with the netid being danielsawyer.
 
-After creating the zip file, upload it to Canvas by the submission due date.
-```
 danielsawyer_project-1.zip contains...
 
+'''
 danielsawyer_project-1
 ├── data
 │   ├── batch
@@ -80,6 +79,7 @@ danielsawyer_project-1
 ├── project.py
 ├── README.md
 ├── requirements.txt
-├── temp.txt
 └── transformations.txt
 ```
+
+After creating the zip file, upload it to Canvas by the submission due date.
