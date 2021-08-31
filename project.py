@@ -332,7 +332,9 @@ class transformations:
     def batch_norm(self, resize_w, resize_h):
         # You can delete this, just copies images from batch
         batch = self.batch
-        batch_new = batch[:2]
+        batch_new = []
+        for img in tqdm(batch):
+            batch_new.append(img)
 
         # Return batch normalized images as uint8
         batch_new = [img.astype(np.uint8) for img in batch_new]
@@ -567,6 +569,7 @@ def main():
     ## Dont change
     batch = img_trans.batch_norm(resize_w, resize_h)
     trans = 'batch_norm'
+    print('\nSaving new batch...')
     for i in tqdm(range(len(batch))):
         img_new = batch[i]
         img_path = img_path_batch_list[i]
