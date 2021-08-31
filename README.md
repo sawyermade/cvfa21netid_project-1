@@ -53,6 +53,8 @@ DO NOT INCLUDE OUTPUT DIRECTORY!!!
 So either delete or move the output directory.
 
 Here is an example tree of the directory structure you should be turning in with the netid being danielsawyer.
+
+After creating the zip file, upload it to Canvas by the submission due date.
 ```
 danielsawyer_project-1.zip contains...
 
