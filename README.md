@@ -13,7 +13,7 @@ mv cvfa21netid_project-1 danielsawyer_project-1
 cd danielsawyer_project-1
 ```
 
-## How To Run
+## How To Run: Pure Python
 
 ### Anaconda Setup
 ```
@@ -35,6 +35,13 @@ pip3 install -r requirements.txt
 # Runs program, will write output images to output directory
 python3 project.py
 ```
+
+## How To Run: Colab
+Open project.py in a text editor then copy and paste into a new Colab Notebook.
+
+DO NOT ADD ANY NEW CODE OR TEXT CELLS
+
+Once Complete go to File, then Download, choose .py, save as project.py, and overwrite the original project.py in the original directory.
 
 ## How To Submit
 For submission replace the cvfa21netid part of the directory with you netid. In my case, my netid is danielsawyer so the directory name would be danielsawyer_project-1.
