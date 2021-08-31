@@ -49,6 +49,7 @@ For submission replace the cvfa21netid part of the directory with you netid. In 
 The whole project should be contained within that directory. Then, zip the directory and only that directory and save it as netid_project-1.zip, where netid is replaced by your netid. In my case, it would be danielsawyer_project-1.zip
 
 DO NOT INCLUDE OUTPUT DIRECTORY!!!
+
 So either delete or move the output directory.
 
 Here is an example tree of the directory structure
