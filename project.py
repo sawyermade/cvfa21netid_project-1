@@ -106,7 +106,7 @@ class transformations:
             self.isgray = False
             self.isrgb  = True
 
-        # Check for alpha channel and remove if there
+        # Check for alpha channel and remove if exists
         if self.isrgb and self.img.shape[2] > 3:
             self.img = self.img[..., :3]
 
