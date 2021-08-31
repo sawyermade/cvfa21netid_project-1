@@ -235,7 +235,7 @@ class transformations:
     Finish functions without creating any new functions here.
     If you need to create new functions, place them in the helpers
     section of the transformations class.
-    The only thing your functions should return is the new image as uint8.
+    The only thing your functions should return is the new image(s) as uint8.
     '''
 
     # Translation
