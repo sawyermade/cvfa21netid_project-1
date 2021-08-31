@@ -42,6 +42,7 @@ For submission replace the cvfa21netid part of the directory with you netid. In 
 The whole project should be contained within that directory. Then, zip the directory and only that directory and save it as netid_project-1.zip, where netid is replaced by your netid. In my case, it would be danielsawyer_project-1.zip
 
 DO NOT INCLUDE OUTPUT DIRECTORY!!!
+So either delete or move the output directory.
 
 Here is an example tree of the directory structure
 ```
@@ -49,11 +50,22 @@ danielsawyer_project-1.zip contains...
 
 danielsawyer_project-1
 ├── data
-│      ├── baboon.png
-│      ├── boat.png
-│      ├── building.png
-│      ├── girl.png
-│      └── tulips.png
+│   ├── baboon.png
+│   ├── batch
+│   │   ├── 0.jpg
+│   │   ├── 1.jpg
+│   │   ├── 2.jpg
+│   │   ├── 3.jpg
+│   │   ├── 4.jpg
+│   │   ├── 5.jpg
+│   │   ├── 6.jpg
+│   │   ├── 7.jpg
+│   │   ├── 8.jpg
+│   │   └── 9.jpg
+│   ├── boat.png
+│   ├── building.png
+│   ├── girl.png
+│   └── tulips.png
 ├── environment.yml
 ├── project.py
 ├── README.md
