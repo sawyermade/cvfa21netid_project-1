@@ -239,6 +239,10 @@ class transformations:
     '''
 
     # Translation
+    ''' 
+    Pecent to shift x & y by. Positive shifts right and down,
+    negative shifts left and up.
+    '''
     def translation(self, shift_x, shift_y):
         # You can delete this, this just makes all black image.
         img_new = np.zeros(self.shape)
@@ -249,6 +253,10 @@ class transformations:
 
 
     # Rotate
+    '''
+    Rotate image by degree theta. Positive is clockwise,
+    negative is counterclockwise.
+    '''
     def rotate(self, theta):
         # You can delete this, this just makes all black image.
         img_new = np.zeros(self.shape)
@@ -259,6 +267,10 @@ class transformations:
 
 
     # Scale
+    '''
+    Scale the image by percent. Over 100% expands the image,
+    while under 100% contracts the image. 
+    '''
     def scale(self, scale_percent):
         # You can delete this, this just makes all black image.
         img_new = np.zeros(self.shape)
@@ -269,6 +281,9 @@ class transformations:
 
 
     # Affine
+    '''
+    User specified vector of 6 parameters for affine transformation.
+    '''
     def affine(self, A):
         # You can delete this, this just makes all black image.
         img_new = np.zeros(self.shape)
@@ -279,6 +294,9 @@ class transformations:
 
 
     # Projection
+    '''
+    User specified vector of 9 parameters for projective transformation.
+    '''
     def projective(self, H):
         # You can delete this, this just makes all black image.
         img_new = np.zeros(self.shape)
@@ -289,6 +307,9 @@ class transformations:
 
 
     # Brightness and Contrast
+    '''
+    Contrast and brightness modulation of the L channel.
+    '''
     def brightness_contrast(self, a, b):
         # You can delete this, this just makes all black image.
         img_new = np.zeros(self.shape)
@@ -299,6 +320,9 @@ class transformations:
 
 
     # Gamma Correction
+    '''
+    Gamma correction of the L channel
+    '''
     def gamma_correction(self, a, b):
         # You can delete this, this just makes all black image.
         img_new = np.zeros(self.shape)
@@ -309,6 +333,9 @@ class transformations:
 
 
     # Histogram Equalization
+    '''
+    Histogram equalization for the L channel
+    '''
     def histogram_equalization(self, a, b):
         # You can delete this, this just makes all black image.
         img_new = np.zeros(self.shape)
@@ -319,6 +346,9 @@ class transformations:
 
 
     # Mean and Standard Deviation
+    '''
+    Calculates mean and sd images.
+    '''
     def mean_sd(self, resize_w, resize_h):
         # You can delete this, just copies images from batch
         batch = self.batch
@@ -332,6 +362,9 @@ class transformations:
         )
 
     # Batch Normalization
+    '''
+    Runs batch normalization on a batch of 10 images
+    '''
     def batch_norm(self, resize_w, resize_h):
         # You can delete this, just copies images from batch
         batch = self.batch
@@ -554,6 +587,9 @@ def main():
     ### STUDENT SECTION START ###
 
     # Compute Mean and SD Image function
+    '''
+    Calculates mean and sd images.
+    '''
     ## Parameters you can change
     resize_w, resize_h = 300, 200 
 
@@ -566,6 +602,9 @@ def main():
 
 
     # Batch Normalization function
+    '''
+    Runs batch normalization on a batch of 10 images
+    '''
     print('\nBatch Normalization...')
     ## Parameters you can change
     resize_w, resize_h = 300, 200
