@@ -22,7 +22,8 @@ try:
     data_dir_parent = '/content'
     data_dir = os.path.join(data_dir_parent, 'data')
     data_zip = '/content/data.zip'
-    url = 'https://drive.google.com/uc?id=1axFBPu_RxdG56voBCuh2btCRce92BE8L'
+    # url = 'https://drive.google.com/uc?id=1axFBPu_RxdG56voBCuh2btCRce92BE8L'
+    url = 'https://drive.google.com/uc?id=1S6tO3qWtbmYS91RnRvI_KeyjGGyvG-sU'
     gdown.download(url, data_zip, quiet=False)
 
     # Extract image data
@@ -541,6 +542,8 @@ def main():
     # Setup batch images
     img_trans = transformations(None, img_path_batch_list)
 
+    ### STUDENT SECTION START ###
+
     # Compute mean and SD image function
     ## Parameters you can change
     resize_w, resize_h = 300, 200 
@@ -566,6 +569,8 @@ def main():
         img_path = img_path_batch_list[i]
         out_path = get_output_path(output_batch_dir, img_path, trans)
         imageio.imwrite(out_path, img_new)
+
+    ### STUDENT SECTION END ###
 
 ##### MAIN FUNCTION END #####
 
