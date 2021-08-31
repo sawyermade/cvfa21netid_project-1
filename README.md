@@ -56,7 +56,7 @@ Here is an example tree of the directory structure you should be turning in with
 
 danielsawyer_project-1.zip contains...
 
-'''
+```
 danielsawyer_project-1
 ├── data
 │   ├── batch
