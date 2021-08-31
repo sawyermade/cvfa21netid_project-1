@@ -152,6 +152,7 @@ class transformations:
         for fx in [0, self.width - 1]:
             for fy in [0, self.height - 1]:
                 x, y = h(fx, fy)
+                x, y = int(x), int(y)
                 cx.append(x)
                 cy.append(y)
 
