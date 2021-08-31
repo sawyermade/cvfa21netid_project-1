@@ -50,7 +50,6 @@ danielsawyer_project-1.zip contains...
 
 danielsawyer_project-1
 ├── data
-│   ├── baboon.png
 │   ├── batch
 │   │   ├── 0.jpg
 │   │   ├── 1.jpg
@@ -62,6 +61,7 @@ danielsawyer_project-1
 │   │   ├── 7.jpg
 │   │   ├── 8.jpg
 │   │   └── 9.jpg
+│   ├── baboon.png
 │   ├── boat.png
 │   ├── building.png
 │   ├── girl.png
