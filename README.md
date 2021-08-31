@@ -44,6 +44,8 @@ Open project.py in a text editor and then copy/paste into a new Colab Notebook.
 
 DO NOT ADD ANY NEW CODE CELLS OR TEXT CELLS!!!
 
+Also, do not use any inline "!" bash commands in your code. You wont need it and it will mess up the grading process, which will lose you points since you cant follow instructions.
+
 Once coding is complete go to the File tab in Colab, then Download, choose ".py", save as project.py, and overwrite the original project.py in the original directory you cloned/downloaded earlier. Then submit according to the section below.
 
 ## How To Submit
@@ -82,6 +84,7 @@ danielsawyer_project-1
 │   ├── building.png
 │   ├── girl.png
 │   └── tulips.png
+├── Assignment_1.pdf
 ├── environment.yml
 ├── project.py
 ├── README.md
