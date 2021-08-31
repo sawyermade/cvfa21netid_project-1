@@ -125,7 +125,7 @@ class transformations:
             self.__setup_image(img_path)
             batch_img_list.append(self.img.copy())
 
-        # Converts and saves
+        # Saves batch
         self.batch = batch_img_list
 
     # Constructor
