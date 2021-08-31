@@ -40,6 +40,8 @@ except Exception as e:
     output_dir = None
 
 ##### HELPERS START #####
+# My helper functions, do not change or add anthing
+
 # Converts degrees to radians
 def degree_to_radian(degree):
     return degree * np.pi / 180.0
