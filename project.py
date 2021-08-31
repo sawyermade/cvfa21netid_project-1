@@ -22,7 +22,6 @@ try:
     data_dir_parent = '/content'
     data_dir = os.path.join(data_dir_parent, 'data')
     data_zip = '/content/data.zip'
-    # url = 'https://drive.google.com/uc?id=1axFBPu_RxdG56voBCuh2btCRce92BE8L'
     url = 'https://drive.google.com/uc?id=1S6tO3qWtbmYS91RnRvI_KeyjGGyvG-sU'
     gdown.download(url, data_zip, quiet=False)
 
