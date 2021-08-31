@@ -37,7 +37,7 @@ python3 project.py
 ```
 
 ## How To Run: Colab
-Open project.py in a text editor then copy and paste into a new Colab Notebook.
+Open project.py in a text editor and then copy/paste into a new Colab Notebook.
 
 DO NOT ADD ANY NEW CODE CELLS OR TEXT CELLS!!!
 
@@ -52,7 +52,7 @@ DO NOT INCLUDE OUTPUT DIRECTORY!!!
 
 So either delete or move the output directory.
 
-Here is an example tree of the directory structure you should be turning in.
+Here is an example tree of the directory structure you should be turning in with the netid being danielsawyer.
 ```
 danielsawyer_project-1.zip contains...
 
