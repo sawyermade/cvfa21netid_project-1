@@ -1,5 +1,8 @@
 # Project 1: Transformations
 
+## Assignment Info
+[Assignment 1 Info](Assignment_1-Image_Transformations.docx)
+
 ## Clone GitHub Repo
 ```
 # Clone
