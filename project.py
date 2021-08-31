@@ -605,11 +605,11 @@ def main():
     '''
     Runs batch normalization on a batch of 10 images
     '''
-    print('\nBatch Normalization...')
     ## Parameters you can change
     resize_w, resize_h = 300, 200
 
     ## Dont change
+    print('\nBatch Normalization...')
     batch = img_trans.batch_norm(resize_w, resize_h)
     trans = 'batch_norm'
     print('\nSaving batch normalized images...')
