@@ -401,6 +401,7 @@ def main():
 
 
         ### STUDENT SECTION START ###
+        # Change only the parameters, nothing else
 
         # Translation function
         ''' 
