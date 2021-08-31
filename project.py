@@ -118,7 +118,7 @@ class transformations:
 
     # Get batch array function
     def __get_batch_array_list(self, batch_paths):
-        # Goes through images adds to batch list
+        # Goes through images and adds to batch list
         batch_paths.sort()
         batch_img_list = []
         for img_path in batch_paths:
