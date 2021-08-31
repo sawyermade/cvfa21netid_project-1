@@ -38,7 +38,7 @@ except Exception as e:
     data_dir = None
     output_dir = None
 
-##### HELPERS START #####
+##### MY HELPERS START #####
 # My helper functions, do not change or add anthing
 
 # Converts degrees to radians
@@ -79,7 +79,7 @@ def get_image_paths(data_dir):
         sys.exit(1)
 
     return img_path_list
-##### HELPERS END #####
+##### MY HELPERS END #####
 
 
 ##### TRANSFORMATION CLASS START #####
@@ -419,7 +419,7 @@ def main():
         # Opens image into transformations object
         img_trans = transformations(img_path)
         
-        ### Examples ###
+        ### EXAMPLES ###
 
         # Flip vertically
         trans = 'flip_vertical'
