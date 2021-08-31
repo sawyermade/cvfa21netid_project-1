@@ -39,7 +39,7 @@ python3 project.py
 ## How To Run: Colab
 Open project.py in a text editor then copy and paste into a new Colab Notebook.
 
-DO NOT ADD ANY NEW CODE OR TEXT CELLS
+DO NOT ADD ANY NEW CODE OR TEXT CELLS!!!
 
 Once Complete go to File, then Download, choose .py, save as project.py, and overwrite the original project.py in the original directory.
 
