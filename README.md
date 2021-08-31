@@ -52,7 +52,7 @@ DO NOT INCLUDE OUTPUT DIRECTORY!!!
 
 So either delete or move the output directory.
 
-Here is an example tree of the directory structure
+Here is an example tree of the directory structure you should be turning in.
 ```
 danielsawyer_project-1.zip contains...
 
