@@ -377,6 +377,7 @@ class transformations:
         return batch_new
 
     ### STUDENT SECTION END ###
+    
 ##### TRANSFORMATION CLASS END #####
 
 ##### MAIN FUNCTION START #####
