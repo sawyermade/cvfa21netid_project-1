@@ -13,7 +13,7 @@ mv cvfa21netid_project-1 danielsawyer_project-1
 cd danielsawyer_project-1
 ```
 
-## How To Run: Pure Python
+## How To Run: Python
 
 ### Anaconda Setup
 ```
