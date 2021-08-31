@@ -5,7 +5,7 @@ from tqdm import tqdm
 from skimage.color import rgb2lab, lab2rgb
 ##### IMPORTS END #####
 
-# Check if using Colab
+# Check if using Colab, do not change
 try:
     # Mount google drive
     from google.colab import drive
@@ -317,9 +317,10 @@ class transformations:
 
     # Mean and Standard Deviation
     def mean_sd(self, resize_w, resize_h):
-        # You can delete this, this just makes all black image.
-        img_mean = self.batch[0]
-        img_sd = self.batch[1]
+        # You can delete this, just copies images from batch
+        batch = self.batch
+        img_mean = batch[0]
+        img_sd = batch[1]
 
         # Return only mean and sd images as uint8
         return (
@@ -329,7 +330,7 @@ class transformations:
 
     # Batch Normalization
     def batch_norm(self, resize_w, resize_h):
-        # You can delete this, this just makes all black image.
+        # You can delete this, just copies images from batch
         batch = self.batch
         batch_new = batch[:2]
 
