@@ -9,7 +9,7 @@ git clone https://github.com/sawyermade/cvfa21netid_project-1.git
 # You can also use file explorer, right-click, and rename
 mv cvfa21netid_project-1 danielsawyer_project-1
 
-# Enter directory, again using my netid as example
+# Enter directory, again using my netid as an example
 cd danielsawyer_project-1
 ```
 
