@@ -334,7 +334,7 @@ class transformations:
         batch = self.batch
         batch_new = batch[:2]
 
-        # Return batch normalized images
+        # Return batch normalized images as uint8
         batch_new = [img.astype(np.uint8) for img in batch_new]
         return batch_new
 
