@@ -1,10 +1,13 @@
 ##### IMPORTS START #####
 # Imported modules, do not change or add anything
-import imageio, sys, os, numpy as np, zipfile
+import imageio, sys, os, numpy as np, zipfile, math
 from tqdm import tqdm
 from skimage.color import rgb2lab, lab2rgb
+from skimage.transform import resize
 ##### IMPORTS END #####
 
+
+##### COLAB STUFF START #####
 # Check if using Colab, do not change
 try:
     # Mount google drive
@@ -37,6 +40,8 @@ except Exception as e:
     COLAB = False
     data_dir = None
     output_dir = None
+##### COLAB STUFF END #####
+
 
 ##### MY HELPERS START #####
 # My helper functions, do not change or add anthing
@@ -349,7 +354,7 @@ class transformations:
     '''
     Calculates mean and sd images.
     '''
-    def mean_sd(self, resize_w, resize_h):
+    def mean_sd(self, resize_shape):
         # You can delete this, just copies images from batch
         batch = self.batch
         img_mean = batch[0]
@@ -365,7 +370,7 @@ class transformations:
     '''
     Runs batch normalization on a batch of 10 images
     '''
-    def batch_norm(self, resize_w, resize_h):
+    def batch_norm(self, resize_shape):
         # You can delete this, just copies images from batch
         batch = self.batch
         batch_new = []
@@ -379,6 +384,7 @@ class transformations:
     ### STUDENT SECTION END ###
 
 ##### TRANSFORMATION CLASS END #####
+
 
 ##### MAIN FUNCTION START #####
 def main():
@@ -592,10 +598,11 @@ def main():
     Calculates mean and sd images.
     '''
     ## Parameters you can change
-    resize_w, resize_h = 300, 200 
+    resize_w, resize_h = 300, 300
 
     ## Dont change
-    img_mean, img_sd = img_trans.mean_sd(resize_w, resize_h)
+    resize_shape = (resize_h, resize_w)
+    img_mean, img_sd = img_trans.mean_sd(resize_shape)
     out_path1 = os.path.join(output_batch_dir, 'batch-mean.png')
     out_path2 = os.path.join(output_batch_dir, 'batch-sd.png')
     imageio.imwrite(out_path1, img_mean)
@@ -607,11 +614,12 @@ def main():
     Runs batch normalization on a batch of 10 images
     '''
     ## Parameters you can change
-    resize_w, resize_h = 300, 200
+    resize_w, resize_h = 300, 300
 
     ## Dont change
     print('\nBatch Normalization...')
-    batch = img_trans.batch_norm(resize_w, resize_h)
+    resize_shape = (resize_h, resize_w)
+    batch = img_trans.batch_norm(resize_shape)
     trans = 'batch_norm'
     print('\nSaving batch normalized images...')
     for i in tqdm(range(len(batch))):
