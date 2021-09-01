@@ -84,8 +84,8 @@ danielsawyer_project-1
 │   ├── building.png
 │   ├── girl.png
 │   └── tulips.png
-├── Assignment_1.pdf
 ├── environment.yml
+├── Project_1.pdf
 ├── project.py
 ├── README.md
 ├── report.pdf
