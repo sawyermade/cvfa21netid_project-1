@@ -25,7 +25,7 @@ cd danielsawyer_project-1
 
 ## How To Run: Python
 
-### Anaconda Setup
+### Anaconda Environment Setup
 ```
 # Install Anaconda Environment
 conda env create -f environment.yml
