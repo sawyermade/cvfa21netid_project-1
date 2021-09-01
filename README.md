@@ -1,7 +1,7 @@
 # Project 1: Transformations
 
 ## Assignment Info
-[Assignment 1 Info](Project_1.pdf)
+[Project 1 Info](Project_1.pdf)
 
 ## Clone GitHub Repo
 ```
