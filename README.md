@@ -3,6 +3,13 @@
 ## Project Info
 [Project 1 Info](Project_1.pdf)
 
+## Anaconda
+If you want to use just Python and not Colab, I highly recommend installing Anaconda. Anaconda is a necessity for data science and I highly recommend it.
+
+[Anaconda Download](https://www.anaconda.com/products/individual)
+
+[Anaconda Cheat Sheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
+
 ## Clone GitHub Repo
 ```
 # Clone
