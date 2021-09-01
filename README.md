@@ -4,7 +4,7 @@
 [Project 1 Info](Project_1.pdf)
 
 ## Anaconda
-If you want to use just Python and not Colab, I highly recommend installing Anaconda. Anaconda is a necessity for data science and I highly recommend it.
+If you want to use just Python and not Colab, I highly recommend installing Anaconda. Anaconda is a necessity for data science and you should learn how to use it because it will change your life.
 
 [Anaconda Download](https://www.anaconda.com/products/individual)
 
