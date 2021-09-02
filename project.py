@@ -413,10 +413,10 @@ def main():
     if not os.path.exists(output_batch_dir):
         os.makedirs(output_batch_dir)
 
-    # Read images in data directory
+    # Get full paths for images in data directory
     img_path_list = get_image_paths(data_dir)
 
-    # Read images in batch dir
+    # Get full paths for images in batch dir
     img_path_batch_list = get_image_paths(data_batch_dir)
 
     ### RUN TRANSFORMATIONS ###
