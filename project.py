@@ -445,7 +445,7 @@ def main():
 
         # Translation function
         ''' 
-        Pecent to shift x & y by. Positive shifts right and down,
+        Percent to shift x & y by. Positive shifts right and down,
         negative shifts left and up.
         '''
         ## Parameters you can change
