@@ -245,7 +245,7 @@ class transformations:
 
     # Translation
     ''' 
-    Pecent to shift x & y by. Positive shifts right and down,
+    Percent to shift x & y by. Positive shifts right and down,
     negative shifts left and up.
     '''
     def translation(self, shift_x, shift_y):
